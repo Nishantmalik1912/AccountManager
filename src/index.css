@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+li{
+    list-style: none;
+    @media (max-width:720px) { 
+        width: 200px
+        
+    }
+    
+}
+h1{
+ user-select: none;
+}
+
+#record{
+ margin: auto;
+ padding: 40px;
+ &::-webkit-scrollbar {
+    display: none;
+  }
+}
+input {
+    outline: none;
+}
+
+#main{
+    width: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      
+@media (max-width:720px) { 
+    display:block;
+    
+}
+   
+}
+
