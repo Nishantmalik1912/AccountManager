@@ -1,10 +1,13 @@
 import React from 'react'
 import Record from '../Record'
-
+ 
 
 const Daily = () => {
+
   return (
+    
     <div>
+        <div><h1></h1></div>
           <Record />
       {/* { record.lenght = 0 ? nts : output } */}
       

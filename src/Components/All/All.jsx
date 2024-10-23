@@ -76,7 +76,7 @@ const All = () => {
       
       
       
-
+   window.globalData = data;
 
   return (
     <>

@@ -9,6 +9,9 @@ import Monthly from './Components/Monthly/Monthly.jsx'
 import Weekly from './Components/weekly/Weekly.jsx'
 import Yearly from './Components/yearly/Yearly.jsx'
 
+
+window.globleData = [] ;
+
 const roouter=createBrowserRouter([
   {path : '/' ,
   element : <App/> ,
