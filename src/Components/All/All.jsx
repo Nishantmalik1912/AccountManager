@@ -21,7 +21,7 @@ const All = () => {
       
        
         const [pop, setPop] = useState(0);
-      
+        const [accDate , setAccDate] = useState([])      
       
         const [data, setData] = useState(getData);
       
@@ -69,15 +69,32 @@ const All = () => {
           })
         }
        
+        
+      
          
         useEffect(()=>{
           localStorage.setItem('list' , JSON.stringify(data))
       
         } , [data])
       
-      
-      
 
+        // let today = new Date();
+        //  console.log(today)
+         let today = new Date();
+         let dd = today.getDate();
+         let mm = (today.getMonth() + 1); //January is 0!
+         let yyyy = today.getFullYear();
+         
+         today = [mm + '/' + dd + '/' + yyyy]
+               
+         console.log(typeof today)
+         
+         
+         const aaj = data.filter((e)=>e.date === today)
+          
+         console.log(aaj)
+
+         
 
   return (
     <>
