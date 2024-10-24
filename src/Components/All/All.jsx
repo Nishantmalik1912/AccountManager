@@ -85,14 +85,18 @@ const All = () => {
          let mm = (today.getMonth() + 1); //January is 0!
          let yyyy = today.getFullYear();
          
-         today = [mm + '/' + dd + '/' + yyyy]
+          today = [yyyy + '-' + mm + '-' + dd ]
                
-         console.log(typeof today)
+         console.log( today)
          
          
-         const aaj = data.filter((e)=>e.date === today)
-          
+         const aaj = data.map((e)=>e.date)
          console.log(aaj)
+         const remain = aaj.filter(today)
+         console.log(remain)
+        
+          
+       
 
          
 
