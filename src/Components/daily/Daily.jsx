@@ -2,7 +2,10 @@ import React from 'react'
 import Record from '../Record'
  
 
+
+
 const Daily = () => {
+
 
   return (
     

@@ -3,7 +3,7 @@ import React from 'react'
 
 import Navbar from './Components/navbar/Navbar';
 
-import { Outlet } from 'react-router-dom';
+
 
 
 
@@ -16,7 +16,7 @@ const App = () => {
     <div id='main' >
       <Navbar/> 
       
-      <Outlet/>
+
 
     </div>
   )

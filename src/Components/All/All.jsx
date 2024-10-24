@@ -3,6 +3,7 @@ import PopupCredit from '../PopupCredit'
 import Record from '../Record'
 
 
+
 const All = () => {
 
   
@@ -76,7 +77,7 @@ const All = () => {
       
       
       
-   window.globalData = data;
+
 
   return (
     <>
